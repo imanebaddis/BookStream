@@ -1,36 +1,29 @@
 using BookStream.Application.Common.Interfaces.Repositories;
-using BookStream.Domain.Common.ResultPattern;
 using BookStream.Domain.Books.Entities;
+using Microsoft.Extensions.Logging;
 
 
 namespace BookStream.Application.Books.Commands.CreateBook
 {
-
-    public class CreateBookCommandHandler:IRequestHandler<CreateBookCommand,Result<Guid>>
+    public class CreateBookCommandHandler:IRequestHandler<CreateBookCommand,Guid>
     {
+        private readonly ILogger<CreateBookCommandHandler> _logger;
+        private readonly IbookRepository _bookRepository;
+
+        public CreateBookCommandHandler(ILogger<CreateBookCommandHandler> logger, IBookRepository bookRepository)
+        {
+            _logger = logger;
+            _bookRepository = bookRepository;
+        }
         
-        
-            
-                private readonly Ilogger<CreateBookCommandHandler>_logger;
-                private readonly IBookRepository _bookRepository;
+        public async Task<Guid> Handle(CreateBookCommand request, CancellationToken cancellationToken)
+        {
+            var book = new Book(request.Name);
 
+            await _bookRepository.CreateBookAsync(book);
 
-                public CreateBookCommandHandler(ILogger<CreateBookCommandHandler> logger, IBookRepository bookRepository)
-
-                {
-                    _logger = logger;
-                    _bookRepository = bookRepository;
-
-                }
-
-                public async Task<Result<Guid>> Handle(CreateBookCommandHandler request, CancellationToken cancellationToken)
-
-                {
-                    var book = new Books(request.Name);
-                    var result = await _bookRepository.AddAsync(book);
-                    return result;
-                }
+            return book.Id;
+        }
     }
-
-
+    
 }

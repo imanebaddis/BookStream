@@ -1,5 +1,5 @@
 using BookStream.Domain.Common.ResultPattern;
-using BookStream.Application.User.Commands.CreateUser
+using BookStream.Application.User.Commands.CreateUser;
 
 {
     public class CreateUserCommand:IRequest<Result<Guid>>
