@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace BookStream.Application.Books.Commands.CreateBook
 {
-    public class CreateBookCommandHandler:IRequestHandler<CreateBookCommand,Guid>
+    public class CreateBookCommandHandler : IRequestHandler<CreateBookCommand, Guid>
     {
         private readonly ILogger<CreateBookCommandHandler> _logger;
         private readonly IbookRepository _bookRepository;
@@ -15,7 +15,7 @@ namespace BookStream.Application.Books.Commands.CreateBook
             _logger = logger;
             _bookRepository = bookRepository;
         }
-        
+
         public async Task<Guid> Handle(CreateBookCommand request, CancellationToken cancellationToken)
         {
             var book = new Book(request.Name);
@@ -25,5 +25,5 @@ namespace BookStream.Application.Books.Commands.CreateBook
             return book.Id;
         }
     }
-    
+
 }

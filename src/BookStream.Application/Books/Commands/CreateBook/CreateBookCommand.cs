@@ -1,11 +1,7 @@
-using BookStream.Domain.Common.ResultPattern;
-using BookStream.Application.Book.Commands.CreateBook;
-
-
+namespace BookStream.Application.Books.Commands.CreateBook
 {
-    public class CreateBookCommand:IRequest<Result<Guid>>
+    public record CreateBookCommand:IRequest<Guid>
     {
         public required string Name { get; init; }
-        
     }
 }
