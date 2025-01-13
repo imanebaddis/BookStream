@@ -1,6 +1,6 @@
 namespace BookStream.Application.Books.Dtos
 {
-    public class BookDtos
+    public class BookDto;
     //<summary>
     //BookId
     // </summary>

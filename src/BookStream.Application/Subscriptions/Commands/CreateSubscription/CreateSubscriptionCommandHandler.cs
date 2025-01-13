@@ -5,7 +5,7 @@ using BookStream.Domain.Common.ResultPattern;
 using Microsoft.Extensions.Logging;
 
 
-namespace BookStream.Application.Categories.Commands.CreateSubscription
+namespace BookStream.Application.Subscriptions.Commands.CreateSubscription
 {
     public class CreateSubscriptionommandHandler:IRequestHandler<CreateSubscriptionCommand,Result<Guid>>
     {
