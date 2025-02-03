@@ -1,6 +1,4 @@
-using BookStream.Application.Common.Interfaces.Repositories;
-
-namespace BookStream.Application.SubscriptionsCommands.Createsubscription
+namespace BookStream.BookStream.src.BookStream.Application.Subscriptions.Commands.CreateSubscription
 {
     /// <summary>
     /// Create subscription command validator
@@ -19,7 +17,8 @@ namespace BookStream.Application.SubscriptionsCommands.Createsubscription
             RuleFor(x => x.Name).NotEmpty().WithMessage("Name is required");
             RuleFor(x => x.Name).MustAsync(BeUniqueName).WithMessage("The specified name already exists");
         }
-
+        
+        
         private async Task<bool> BeUniqueName(string name, CancellationToken cancellationToken)
         {
             var subscriptionsResult = await _subscriptionRepository.GetSubscriptionAsync();

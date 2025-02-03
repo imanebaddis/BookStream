@@ -4,7 +4,7 @@ using BookStream.Application.User.Commands.CreateUser;
 
 using BookStream.Domain.Entities; 
 {
-        public class CreateUserCommand:IRequest<Guid>
+        public abstract class CreateUserCommand:IRequest<Guid>
     {
         public required string Name { get; init; }
         public required string Email { get; init; }
@@ -13,8 +13,9 @@ using BookStream.Domain.Entities;
 
         public required  string Username { get; init;}
 
-        public required  sstring Role { get; init;}
+        public required  string Role { get; init;}
 
  
     }
 }
+

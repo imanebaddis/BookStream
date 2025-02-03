@@ -5,7 +5,7 @@ using BookStream.Domain.Books.Entities;
 namespace BookStream.Application.Books.Mappings
 
 {
-    publlic class BookProfile:Profile
+    public class BookProfile:Profile
 
     {
     public BookProfile()
