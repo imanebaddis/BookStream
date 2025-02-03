@@ -8,7 +8,7 @@ namespace BookStream.BookStream.src.BookStream.Application.Categories.Dtos
         /// <summary>
         /// The unique identifier for the category
         /// </summary>
-        public Guid Id { get; set; }
+        public Guid Id { get; set; }c
 
         /// <summary>
         /// The name of the category

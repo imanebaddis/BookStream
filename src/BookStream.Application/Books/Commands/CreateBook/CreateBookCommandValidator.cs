@@ -8,7 +8,7 @@ namespace BookStream.Application.Book.Commands.CreateBook
         private readonly IBookRepository _bookRepository;
 
 
-
+         
         public CreateBookCommandValidator(IBookRepository bookRepository)
 
         {

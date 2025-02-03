@@ -5,3 +5,4 @@ namespace BookStream.Web.Subscriptions.Dtos
         public required string name { get; set; }
     }
 }
+
