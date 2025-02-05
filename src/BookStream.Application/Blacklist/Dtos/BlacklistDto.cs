@@ -1,4 +1,4 @@
-namespace BookStream.BookStream.src.BookStream.Application.Blacklist.Dtos;
+namespace BookStream.BookStream.src.BookStream.Application.Blacklist.Dtos
 {
     public class BlacklistDTO
     {

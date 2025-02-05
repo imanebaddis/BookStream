@@ -1,7 +1,7 @@
 using FluentValidation;
 using BookStore.Application.Commands;
 
-namespace BookStream.BookStream.src.BookStream.Application.Blacklist;
+namespace BookStream.BookStream.src.BookStream.Application.Blacklist
 
 {
     public class AddUserToBlacklistCommandValidator : AbstractValidator<AddUserToBlacklistCommand>

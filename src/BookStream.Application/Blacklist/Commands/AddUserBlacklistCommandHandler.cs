@@ -5,7 +5,7 @@ using BookStore.Application.Commands;
 using BookStore.Application.Validators;
 using BookStore.Domain.Interfaces;
 
-namespace BookStream.BookStream.src.BookStream.Application.Blacklist;
+namespace BookStream.BookStream.src.BookStream.Application.Blacklist
 {
     public class AddUserToBlacklistCommandHandler : IRequestHandler<AddUserToBlacklistCommand, bool>
     {
