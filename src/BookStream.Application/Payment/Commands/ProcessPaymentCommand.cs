@@ -12,3 +12,4 @@ namespace BookStream.BookStream.src.BookStream.Application.Payment.Commands
         public string TransactionId { get; set; } // ID transazione del gateway di pagamento
     }
 }
+

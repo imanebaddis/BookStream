@@ -1,0 +1,65 @@
+﻿<Properties StartupConfiguration="{BF650DDD-6266-4387-9534-A6F40C431883}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.src.BookStream.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/BookStream.Application/Payment/Commands/ProcessPaymentCommandHandler.cs">
+    <Files>
+      <File FileName="src/BookStream.Application/Payment/Dtos/PaymentDto.cs" />
+      <File FileName="src/BookStream.Application/Users/Commands/CreateUser/CreateUserCommand.cs" />
+      <File FileName="src/BookStream.Application/Users/Commands/CreateUser/CreateUserCommandHandler.cs" />
+      <File FileName="src/BookStream.Application/Users/Commands/CreateUser/CreateUserCommandValidator.cs" />
+      <File FileName="src/BookStream.Application/Books/Queries/GetAllBooks/GetAllBooksWithPaginationQuery.cs" />
+      <File FileName="src/BookStream.Application/Books/Queries/GetAllBooks/GetAllBoooksQueryHanlder.cs" />
+      <File FileName="src/BookStream.Application/Categories/Queries/GetAllActiveCategories/GetAllActiveCategoriesQueryHanlder.cs" />
+      <File FileName="src/BookStream.Application/Payment/Commands/ProcessPaymentCommand.cs" />
+      <File FileName="src/BookStream.Application/Books/Mappings/BookProfile.cs" />
+      <File FileName="src/BookStream.Application/Categories/Queries/GetAllActiveCategories/GetAllActiveCategoriesWithPaginationQuery.cs" />
+      <File FileName="src/BookStream.Application/Payment/Commands/ProcessPaymentCommandHandler.cs" Line="27" Column="16" />
+      <File FileName="src/BookStream.Web/Controllers/WeatherForecastController.cs" />
+      <File FileName="src/BookStream.Application/Subscriptions/Commands/CreateSubscription/CreateSubscriptionCommand.cs" />
+      <File FileName="src/BookStream.Web/WeatherForecast.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BookStream" expanded="True">
+            <Node name="Elementi della soluzione" expanded="True" />
+            <Node name="src" expanded="True">
+              <Node name="BookStream.Application" expanded="True">
+                <Node name="Common" expanded="True">
+                  <Node name="Interfaces" expanded="True">
+                    <Node name="Repositories" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="Payment" expanded="True">
+                  <Node name="Commands" expanded="True">
+                    <Node name="ProcessPaymentCommandHandler.cs" selected="True" />
+                  </Node>
+                  <Node name="Dtos" expanded="True" />
+                </Node>
+                <Node name="Subscriptions" expanded="True">
+                  <Node name="Commands" expanded="True">
+                    <Node name="CreateSubscription" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="Users" expanded="True">
+                  <Node name="Commands" expanded="True">
+                    <Node name="CreateUser" expanded="True" />
+                    <Node name="LoginUser" expanded="True" />
+                  </Node>
+                  <Node name="Dtos" expanded="True" />
+                  <Node name="Queries" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="BookStream.Infrastructure" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

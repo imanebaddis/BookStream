@@ -33,6 +33,9 @@ namespace BookStream.Application.Users.Commands.CreateUser
                 return Result.Failure<Guid>("L'email è già in uso");
             }
 
+
+
+
             // Create new user
             var user = new User
             {

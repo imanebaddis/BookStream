@@ -1,0 +1,7 @@
+/Users/imane/RiderProjects/BookStream/BookStream/src/BookStream.Web/obj/Debug/net7.0/BookStream.Web.csproj.AssemblyReference.cache
+/Users/imane/RiderProjects/BookStream/BookStream/src/BookStream.Web/obj/Debug/net7.0/BookStream.Web.GeneratedMSBuildEditorConfig.editorconfig
+/Users/imane/RiderProjects/BookStream/BookStream/src/BookStream.Web/obj/Debug/net7.0/BookStream.Web.AssemblyInfoInputs.cache
+/Users/imane/RiderProjects/BookStream/BookStream/src/BookStream.Web/obj/Debug/net7.0/BookStream.Web.AssemblyInfo.cs
+/Users/imane/RiderProjects/BookStream/BookStream/src/BookStream.Web/obj/Debug/net7.0/BookStream.Web.csproj.CoreCompileInputs.cache
+/Users/imane/RiderProjects/BookStream/BookStream/src/BookStream.Web/obj/Debug/net7.0/BookStream.Web.MvcApplicationPartsAssemblyInfo.cs
+/Users/imane/RiderProjects/BookStream/BookStream/src/BookStream.Web/obj/Debug/net7.0/BookStream.Web.MvcApplicationPartsAssemblyInfo.cache
