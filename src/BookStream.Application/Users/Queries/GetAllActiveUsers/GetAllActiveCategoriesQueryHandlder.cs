@@ -2,10 +2,17 @@ using BookStream.Application.Users.Dtos;
 using BookStream.Application.Common.Interfaces.Repositories;
 using BookStream.Domain.Common.ResultPattern;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging; 
+
+
+namespace BookStore.Application.Users.Queries.GetAllActiveUsers 
+    
+
+
 
 namespace BookStream.Application.Users.Queries.GetAllActiveUsers
 {
-    public class GetAllActiveUsersQueryHanlder : IRequestHandler<GetAllActiveUsersWithPaginationQuery, Result<IEnumerable<userDto>>>
+    public class GetAllActiveUsersQueryHandler : IRequestHandler<GetAllActiveUsersWithPaginationQuery, Result<IEnumerable<userDto>>>
     {
         private readonly ILogger<GetAllActiveUsersQueryHanlder> _logger;
         private readonly IuserRepository _userRepository;
@@ -16,7 +23,7 @@ namespace BookStream.Application.Users.Queries.GetAllActiveUsers
             _userRepository = userRepository;    
         }
 
-        public async Task<Result<IEnumerable<userDto>>> Handle(GetAllActiveUsersWithPaginationQuery request, CancellationToken cancellationToken)
+        public async Task<Result<IEnumerable<userDto>>> Handler(GetAllActiveUsersWithPaginationQuery request, CancellationToken cancellationToken)
         {
             return await _userRepository.GetActiveUsersAsync(request);
         }

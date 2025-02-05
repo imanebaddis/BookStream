@@ -16,7 +16,9 @@ namespace BookStream.BookStream.src.BookStream.Application.Payment.Commands
             RuleFor(x => x.Amount)
                 .NotEmpty().WithMessage("Amount is required.")
                 .GreaterThan(0).WithMessage("Amount must be greater than 0.");
-
+            
+            
+            
             RuleFor(x => x.PaymentMethod)
                 .NotEmpty().WithMessage("Payment method is required.")
                 .Must(BeAValidPaymentMethod).WithMessage("Invalid payment method.");
