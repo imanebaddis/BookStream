@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookStream.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f16f8ecc09f2b1d29db228909a7b82702ac0db2d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bccecfff68faa248521eaed8d790aa6ac7d7fa26")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookStream.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookStream.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

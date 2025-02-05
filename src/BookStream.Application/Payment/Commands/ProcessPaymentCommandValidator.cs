@@ -2,7 +2,7 @@
 using FluentValidation;
 using BookStore.Application.Commands;
 
-namespace BookStream.BookStream.src.BookStream.Application.Payment.Commands;
+namespace BookStream.BookStream.src.BookStream.Application.Payment.Commands
 
 {
     public class ProcessPaymentCommandValidator : AbstractValidator<ProcessPaymentCommand>

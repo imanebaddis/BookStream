@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using MediatR;
 using BookStore.Application.Commands;
-namespace BookStream.BookStream.src.BookStream.Web.Controllers;
+namespace BookStream.BookStream.src.BookStream.Web.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

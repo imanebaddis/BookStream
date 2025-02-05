@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace BookStream.Web.Controllers;
+namespace BookStream.Web.Controllers
 
 [ApiController]
 [Route("[controller]")]

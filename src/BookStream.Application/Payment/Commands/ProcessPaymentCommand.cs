@@ -1,7 +1,7 @@
 
 using MediatR;
 
-namespace BookStream.BookStream.src.BookStream.Application.Payment.Commands;
+namespace BookStream.BookStream.src.BookStream.Application.Payment.Commands
 
 {
     public class ProcessPaymentCommand : IRequest<bool> // Restituisce true se il pagamento è riuscito

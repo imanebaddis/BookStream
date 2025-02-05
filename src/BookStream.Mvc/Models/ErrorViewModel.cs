@@ -1,4 +1,4 @@
-namespace BookStream.Models;
+namespace BookStream.Models
 
 public class ErrorViewModel
 {

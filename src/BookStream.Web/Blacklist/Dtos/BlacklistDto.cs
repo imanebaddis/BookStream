@@ -1,4 +1,4 @@
-namespace BookStream.Web.Blacklist;
+namespace BookStream.Web.Blacklist
 {
     public class BlacklistDTO
     {

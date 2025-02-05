@@ -63,8 +63,3 @@ namespace BookStream.Infrastructure.Categories.Persistence.Models
 
     }
 };
-
-public class CategoryModel
-{
-    
-}

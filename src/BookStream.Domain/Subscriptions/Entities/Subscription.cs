@@ -1,4 +1,4 @@
-namespace BookStream.Domain.Subscriptions.Entities;
+namespace BookStream.Domain.Subscriptions.Entities
 public class Subscription
 {
     public int Id { get; set; }

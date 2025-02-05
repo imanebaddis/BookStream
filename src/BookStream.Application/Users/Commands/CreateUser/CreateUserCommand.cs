@@ -3,6 +3,8 @@ using BookStream.Domain.Common.ResultPattern;
 using BookStream.Application.User.Commands.CreateUser;
 
 using BookStream.Domain.Entities; 
+namespace BookStream.Application.Users.Commands.CreateUser
+
 {
         public abstract class CreateUserCommand:IRequest<Guid>
     {

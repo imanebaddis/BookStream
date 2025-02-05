@@ -1,4 +1,4 @@
-namespace BookStream.Web;
+namespace BookStream.Web
 
 public class WeatherForecast
 {
