@@ -1,3 +1,5 @@
+using FluentValidation;
+
 namespace BookStream.BookStream.src.BookStream.Application.Blacklist.Commands
 
 {

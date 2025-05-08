@@ -5,8 +5,10 @@ using BookStream.Domain.Categories.Entities;
 using BookStream.Domain.Common.ResultPattern;
 using BookStream.Infrastructure.Categories.Persistence.Models;
 using Microsoft.Extensions.Logging;
+using Supabase;
 
-namespace BookStream.Infrastructure.Categories.Persistence
+
+/*namespace BookStream.Infrastructure.Categories.Persistence
 {
     public class CategoryRepository : ICategoryRepository
     {
@@ -114,5 +116,28 @@ namespace BookStream.Infrastructure.Categories.Persistence
                 return Result<CategoryDto>.Failure(Error.Failure("An error occurred while fetching the category",ex.Message));
             }
         }
+    }
+}*/
+
+using Supabase.Postgrest.Attributes;
+
+namespace BookStream.Infrastructure.Categories.Persistence.Models
+{
+    [Table("categories")]
+    public class CategoryModel
+    {
+        [Column("id")]
+        public int Id { get; set; }
+
+        [Column("title")]
+        public string Title { get; set; }
+
+        [Column("description")]
+        public string Description { get; set; }
+
+        [Column("created_at")]
+        public DateTime CreatedAt { get; set; }
+
+        // ... altri campi
     }
 }

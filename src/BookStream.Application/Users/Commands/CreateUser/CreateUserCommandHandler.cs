@@ -5,6 +5,7 @@ using BookStream.Application.Common.Interfaces.Repositories;
 using BookStream.Domain.Common.ResultPattern;
 using BookStream.Domain.Users.Entities;
 using Microsoft.Extensions.Logging; // Make sure this is included
+using MediatR; // Add this missing import
 using BCrypt.Net;
 
 namespace BookStream.Application.Users.Commands.CreateUser

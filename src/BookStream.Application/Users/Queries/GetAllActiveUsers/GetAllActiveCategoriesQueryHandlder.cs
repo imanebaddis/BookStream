@@ -4,12 +4,7 @@ using BookStream.Domain.Common.ResultPattern;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging; 
 
-
-namespace BookStore.Application.Users.Queries.GetAllActiveUsers 
-    
-
-
-
+using MediatR;
 namespace BookStream.Application.Users.Queries.GetAllActiveUsers
 {
     public class GetAllActiveUsersQueryHandler : IRequestHandler<GetAllActiveUsersWithPaginationQuery, Result<IEnumerable<userDto>>>

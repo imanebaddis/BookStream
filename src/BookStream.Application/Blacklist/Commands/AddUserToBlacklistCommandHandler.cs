@@ -1,18 +1,19 @@
 using MediatR;
 using FluentValidation;
+using FluentValidation.Results;
 using BookStore.Domain.Entities;
-using BookStore.Application.Commands;
-using BookStore.Application.Validators;
+using BookStore.Application.Commands.Blacklist;
+using BookStore.Application.Commands.Blacklist.Validators;
 using BookStore.Domain.Interfaces;
-
-namespace BookStream.src.BookStream.Application.Blacklist
+using BookStore.Application.Interfaces;
+namespace BookStore.Application.Blacklist
 {
     public class AddUserToBlacklistCommandHandler : IRequestHandler<AddUserToBlacklistCommand, bool>
     {
         private readonly IBlacklistRepository _blacklistRepository;
-        private readonly AddUserToBlacklistCommandValidator _validator;
+        private readonly IValidator<AddUserToBlacklistCommand> _validator;
 
-        public AddUserToBlacklistCommandHandler(IBlacklistRepository blacklistRepository, AddUserToBlacklistCommandValidator validator)
+        public AddUserToBlacklistCommandHandler(IBlacklistRepository blacklistRepository, IValidator<AddUserToBlacklistCommand> validator)
         {
             _blacklistRepository = blacklistRepository;
             _validator = validator;

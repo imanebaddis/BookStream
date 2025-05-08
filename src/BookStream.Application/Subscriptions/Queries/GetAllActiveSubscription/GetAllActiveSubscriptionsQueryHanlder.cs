@@ -1,8 +1,10 @@
-using BookStream.Application.Subscriptions.Dtos;
+//using BookStream.Application.Subscriptions.Dtos;
 using BookStream.Application.Common.Interfaces.Repositories;
 using BookStream.Domain.Common.ResultPattern;
 using MediatR; // Assicurati di importare MediatR
 using Microsoft.Extensions.Logging;
+using BookStream.Application.Subscriptions.Queries.GetAllActiveSubscriptions;
+using BookStream.Application.Subscription.Dtos;
 
 namespace BookStream.Application.Subscriptions.Queries.GetAllActiveSubscriptions
 {
@@ -70,4 +72,4 @@ namespace BookStream.Application.Subscriptions.Queries.GetAllActiveSubscriptions
     internal interface ISubscriptionRepository
     {
     }
-}
+

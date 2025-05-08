@@ -2,6 +2,9 @@ using BookStream.Application.Common.Interfaces.Repositories;
 using BookStream.Domain.Subscriptions.Entities;
 using BookStream.Domain.Common.ResultPattern;
 using Microsoft.Extensions.Logging;
+using FluentValidation;
+using MediatR;
+using BookStream.Application.Common.Interfaces.Services;
 
 
 namespace BookStream.Application.Subscriptions.Commands.CreateSubscription

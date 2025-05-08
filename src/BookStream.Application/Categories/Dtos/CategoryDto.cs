@@ -1,3 +1,5 @@
+using BookStream.Application.Categories.Dtos;
+
 namespace BookStream.BookStream.src.BookStream.Application.Categories.Dtos
 {
     /// <summary>

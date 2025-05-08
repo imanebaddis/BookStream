@@ -8,6 +8,15 @@ using BookStream.Application.Users.Dtos;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
+public class UserDto
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Email { get; set; }
+    public DateTime? BlacklistedDate { get; set; }
+}
+
+
 namespace BookStream.Application.Users.Queries.GetBlacklistedUsers
 {
     // Query per ottenere la lista degli utenti bloccati

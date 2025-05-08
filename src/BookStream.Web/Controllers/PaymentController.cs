@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using MediatR;
-using BookStore.Application.Commands;
+using BookStore.Application.Commands.Payments;
 
 namespace BookStore.Web.Controllers
 {

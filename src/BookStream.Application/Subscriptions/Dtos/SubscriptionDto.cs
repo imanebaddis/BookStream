@@ -1,3 +1,4 @@
+using BookStream.Application.Subscriptions.Dtos;
 namespace BookStream.Application.Subscription.Dtos
 {//<summary>
   // Subscription 

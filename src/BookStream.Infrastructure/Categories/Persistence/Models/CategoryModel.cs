@@ -1,7 +1,10 @@
 using BookStream.Application.Categories.Dtos;
 using BookStream.Domain.Categories.Entities;
-using  Supabase.Postgrest.Attributes;
+using Supabase.Postgrest.Attributes;
 using Supabase.Postgrest.Models;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace BookStream.Infrastructure.Categories.Persistence.Models
 {
@@ -11,7 +14,7 @@ namespace BookStream.Infrastructure.Categories.Persistence.Models
         /// <summary>
         /// The unique identifier
         /// </summary>
-        [PrimaryKey("id")]
+        [Key]
         public Guid Id { get; set; }
 
         /// <summary>

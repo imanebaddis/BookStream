@@ -1,7 +1,13 @@
-namespace BookStream.Web.Books.Dtos
+
+using FluentValidation;
+using BookStream.Web.Books.Dtos;
+
+public class CreateBookRequestValidator : AbstractValidator<CreateBookRequest>
 {
-    public class CreateBookRequest
+    public CreateBookRequestValidator()
     {
-        public required string Title { get; set; }
+        RuleFor(x => x.Title)
+            .NotEmpty().WithMessage("Il titolo è obbligatorio")
+            .MaximumLength(200).WithMessage("Il titolo non può superare i 200 caratteri");
     }
 }

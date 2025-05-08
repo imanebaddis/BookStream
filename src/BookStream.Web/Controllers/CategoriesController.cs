@@ -6,6 +6,8 @@ using BookStream.Domain.Common.Enums;
 using BookStream.Web.Categories.Dtos;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using BookStream.web.Categories.Dtos;
+
 
 namespace BookStream.Web.Controllers
 {

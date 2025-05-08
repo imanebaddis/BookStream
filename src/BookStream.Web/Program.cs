@@ -10,6 +10,24 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+// Configurazione Supabase
+var supabaseUrl = builder.Configuration["Supabase:Url"];
+var supabaseKey = builder.Configuration["Supabase:Key"];
+var options = new SupabaseOptions
+{
+    AutoRefreshToken = true,
+    AutoConnectRealtime = true
+};
+
+builder.Services.AddSingleton(provider =>
+    new Client(supabaseUrl, supabaseKey, options));
+
+
+builder.Services.AddScoped<IBookRepository, BookRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+// ... altri servizi
+
 // Configure PostgreSQL DbContext
 builder.Services.AddDbContext<BookStreamDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -54,10 +72,18 @@ app.MapGet("/weatherforecast", () =>
     })
     .WithName("GetWeatherForecast")
     .WithOpenApi();
+// ... altre configurazioni
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+// Registra i servizi
+builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddScoped<ISubscriptionService, SubscriptionService>();
+
+// Registra i validator
+builder.Services.AddValidatorsFromAssemblyContaining<CreateSubscriptionCommandValidator>();
+
+// ... resto della configurazione
+
+builder.Services.AddScoped<IBookService, BookService>();
 
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

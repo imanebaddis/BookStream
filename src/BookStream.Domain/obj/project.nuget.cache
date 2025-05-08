@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "la0yZ+fLFVF9mSheFaIlM+jv3zv4j3FZe6WGL+Th+DpRz0ToKbIM5+QSWQUyY76IxpRMhz8uHH6yx6iDFvIs9Q==",
+  "dgSpecHash": "clD3QOQhQKk=",
   "success": true,
   "projectFilePath": "/Users/imane/RiderProjects/BookStream/BookStream/src/BookStream.Domain/BookStream.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/imane/.nuget/packages/mediatr/12.4.1/mediatr.12.4.1.nupkg.sha512",
+    "/Users/imane/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/imane/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/imane/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/imane/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512"
+  ],
   "logs": []
 }

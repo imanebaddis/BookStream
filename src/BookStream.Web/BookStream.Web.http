@@ -1,6 +1,2 @@
-@BookStream.Web_HostAddress = http://localhost:5287
-
-GET {{BookStream.Web_HostAddress}}/weatherforecast/
+GET http://localhost:5287/weatherforecast/
 Accept: application/json
-
-###

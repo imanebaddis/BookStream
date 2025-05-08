@@ -31,8 +31,7 @@ namespace BookStream.Application.Categories.Queries.GetSigneCategory
             }
         }
     }
-}using BookStream.Application.Categories.Dtos;
-using BookStream.Domain.Common.ResultPattern;
+}
 
 namespace BookStream.Application.Categories.Queries.GetSigneCategory
 {

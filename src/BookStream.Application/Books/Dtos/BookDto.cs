@@ -1,4 +1,4 @@
-namespace BookStream.Application.Books.Dtos
+/*namespace BookStream.Application.Books.Dtos
 {
     public class BookDto;
     //<summary>
@@ -52,4 +52,38 @@ namespace BookStream.Application.Books.Dtos
     /// Price
     /// </summary>
     public decimal Price { get; set; }
+}*/
+
+namespace BookStream.Application.Books.Dtos
+{
+    public class BookDto
+    {
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public string ISBN { get; set; }
+        public decimal Price { get; set; }
+        public string Description { get; set; }
+        public DateTime PublishedDate { get; set; }
+    }
+
+    public class CreateBookRequest
+    {
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public string ISBN { get; set; }
+        public decimal Price { get; set; }
+        public string Description { get; set; }
+        public DateTime PublishedDate { get; set; }
+    }
+
+    public class UpdateBookRequest
+    {
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public string ISBN { get; set; }
+        public decimal Price { get; set; }
+        public string Description { get; set; }
+        public DateTime PublishedDate { get; set; }
+    }
 }
